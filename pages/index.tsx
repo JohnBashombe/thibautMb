@@ -1,7 +1,6 @@
-import Head from 'next/head';
 import React from 'react';
-
 import App from './_app';
+import Head from 'next/head';
 
 /**
  * @author Ntavigwa Bashombe
@@ -16,8 +15,11 @@ const Home = () => {
   return (
     <div className='flex'>
       <Head>
-        <title>Template By Ntavigwa</title>
-        <meta name='description' content='Template By Ntavigwa Bashombe' />
+        <title>Thibaut MB - Architect</title>
+        <meta
+          name='description'
+          content='Thibaut Mukomacogo Bashombe - Website Portfolio'
+        />
       </Head>
       <App />
     </div>
