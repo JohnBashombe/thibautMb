@@ -12,7 +12,7 @@ const TopBar = (): JSX.Element => {
   const [selected, setSelected] = useState(Menu[0].title);
   return (
     <div className='flex justify-between items-center px-28 py-10 border-b-[1px] border-white'>
-      <p className='font-bold text-4xl'>Thibaut M.B.</p>
+      <p className='font-bold text-5xl'>Thibaut MB</p>
       <div className='flex space-x-4 justify-center items-center'>
         {Menu.map((value, index) => (
           <p
@@ -29,7 +29,7 @@ const TopBar = (): JSX.Element => {
           </p>
         ))}
       </div>
-      <div className='py-4 px-8 bg-white text-black text-sm font-bold'>
+      <div className='py-4 px-8 bg-white text-black text-sm font-bold cursor-pointer'>
         <p>Contact Us</p>
       </div>
     </div>
