@@ -4,10 +4,10 @@ import { FaDotCircle } from 'react-icons/fa';
 
 const Dream = (): JSX.Element => {
   return (
-    <div className='pt-40 grid grid-cols-1 md:grid-cols-2 gap-10'>
-      <div className='flex space-x-2'>
-        <div className='w-[70%] bg-gray-200 h-96'></div>
-        <div className='w-[30%] bg-gray-200 h-96'></div>
+    <div className='pt-16 md:pt-28 grid grid-cols-1 lg:grid-cols-2 gap-10'>
+      <div className='flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-2'>
+        <div className='w-full lg:w-[70%] bg-gray-200 h-96'></div>
+        <div className='w-full lg:w-[30%] bg-gray-200 h-96'></div>
       </div>
       <div className='flex flex-col space-y-6'>
         <p className='font-bold text-4xl text-white uppercase'>
