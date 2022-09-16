@@ -4,12 +4,12 @@ const Header = (): JSX.Element => {
   return (
     <div className='py-10 flex flex-col'>
       <div className='flex flex-col space-y-10'>
-        <div className='flex flex-row justify-between items-end'>
-          <div className='flex flex-col uppercase text-8xl font-bold'>
+        <div className='flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between items-start lg:items-end'>
+          <div className='flex flex-col uppercase text-4xl md:text-6xl lg:text-8xl font-bold'>
             <p>Magnificient</p>
             <p>Architect Design</p>
           </div>
-          <div className='flex flex-col text-gray-200 font-thin text-sm justify-end items-end'>
+          <div className='flex flex-col text-gray-200 w-full lg:w-auto font-thin text-sm justify-end items-end'>
             <p>a design that pampers</p>
             <p>you like you're in a </p>
             <p>beautiful dreamland</p>

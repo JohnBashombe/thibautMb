@@ -4,10 +4,10 @@ const Work = (): JSX.Element => {
   const Years: number[] = [2022, 2021, 2020, 2019, 2018];
   const [selected, setSelected] = useState<number>(new Date().getFullYear());
   return (
-    <div className='text-white pt-40 flex flex-col w-full space-y-10'>
-      <div className='w-full grid grid-cols-1 md:grid-cols-2'>
-        <div className='flex flex-col space-y-8'>
-          <p className='text-5xl font-bold uppercase'>
+    <div className='text-white pt-16 md:pt-20 lg:pt-28 flex flex-col w-full space-y-10'>
+      <div className='w-full grid grid-cols-1 lg:grid-cols-2'>
+        <div className='flex flex-col space-y-5 md:space-y-8'>
+          <p className='text-4xl md:text-5xl font-bold uppercase'>
             The last project we have worked on
           </p>
           <p className='text-base text-gray-400 text-justify'>
@@ -16,7 +16,7 @@ const Work = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className='flex justify-between items-center'>
+      <div className='flex justify-between items-center space-x-4'>
         <div className='flex justify-start items-center overflow-x-auto no-scrollbars space-x-4 font-bold text-sm'>
           {Years.map((value, index) => (
             <div
@@ -33,7 +33,7 @@ const Work = (): JSX.Element => {
             </div>
           ))}
         </div>
-        <p className='text-sm text-gray-400 hover:text-white text-justify cursor-pointer'>
+        <p className='text-sm text-gray-400 hover:text-white text-justify cursor-pointer min-w-fit'>
           See all project
         </p>
       </div>

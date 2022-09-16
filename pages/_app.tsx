@@ -1,12 +1,8 @@
 import React from 'react';
-import { NextPage } from 'next';
-import Work from '../components/Work';
-import Dream from '../components/Dream';
-import TopBar from '../components/TopBar';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import AboutUs from '../components/AboutUs';
-import Contact from '../components/Contact';
+import { RecoilRoot } from 'recoil';
+import { AppProps } from 'next/app';
+import PageMeta from '../components/PageMeta';
+import Scaffold from '../components/Scaffold';
 import '../styles/globals.css';
 
 /**
@@ -18,20 +14,15 @@ import '../styles/globals.css';
  * @license MIT
  * @version 1.0.0
  */
-const App: NextPage = (): JSX.Element => {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <div className='w-full h-full min-h-screen bg-black text-white pb-20'>
-      <TopBar />
-      <div className='flex flex-col w-full px-28 pb-20'>
-        <Header />
-        <AboutUs />
-        <Dream />
-        <Work />
-      </div>
-      <Contact />
-      <Footer />
-    </div>
+    <RecoilRoot>
+      <PageMeta />
+      <Scaffold>
+        <Component {...pageProps} />
+      </Scaffold>
+    </RecoilRoot>
   );
 };
 
-export default App;
+export default MyApp;
