@@ -1,21 +1,19 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 
 const Header = (): JSX.Element => {
+  const router = useRouter();
   return (
     <div className='py-10 flex flex-col'>
       <div className='flex flex-col space-y-10'>
-        <div className='flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between items-start lg:items-end'>
-          <div className='flex flex-col uppercase text-4xl md:text-6xl lg:text-8xl font-bold'>
-            <p>Magnificient</p>
-            <p>Architect Design</p>
-          </div>
-          <div className='flex flex-col text-gray-200 w-full lg:w-auto font-thin text-sm justify-end items-end'>
-            <p>a design that pampers</p>
-            <p>you like you're in a </p>
-            <p>beautiful dreamland</p>
-          </div>
+        <div className='flex flex-col uppercase text-4xl md:text-6xl lg:text-8xl font-bold'>
+          <p>Magnificient</p>
+          <p>Architect Design</p>
         </div>
-        <div className='w-full h-96 bg-gray-200'></div>
+        <div
+          onClick={() => void router.push('/works/1')}
+          className='w-full h-96 bg-gray-200 cursor-pointer'
+        ></div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ import '../styles/globals.css';
  * @since 0.001
  *
  * @summary This is the main app that imports our styles
- * @returns {JSX.Element}: JSX Code for App
+ * @returns {JSX.Element}: JSX Code for MyApp
  * @license MIT
  * @version 1.0.0
  */
