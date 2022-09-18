@@ -17,9 +17,9 @@ const Footer = (): JSX.Element => {
           <input
             type='text'
             placeholder='Your email address'
-            className='bg-transparent focus:outline-none w-full'
+            className='bg-transparent focus:outline-none w-full text-sm md:text-base'
           />
-          <button className='text-sm font-bold text-black bg-white px-8 md:px-12 py-3'>
+          <button className='text-sm font-bold text-black bg-white px-6 md:px-12 py-2 md:py-3'>
             Submit
           </button>
         </div>
@@ -33,22 +33,22 @@ export default Footer;
 
 const BottomNavigation = (): JSX.Element => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-      <div className='flex flex-col text-gray-500 font-medium space-y-2 text-sm'>
-        <p className='text-xl text-white font-bold pb-2'>Menu</p>
+    <div className='grid grid-cols-3 md:grid-cols-3 gap-5 text-xs md:text-sm'>
+      <div className='flex flex-col text-gray-500 font-medium space-y-2 w-full'>
+        <p className='text-base md:text-xl text-white font-bold pb-2'>Menu</p>
         <p className='cursor-pointer hover:text-white'>Home</p>
         <p className='cursor-pointer hover:text-white'>Service</p>
         <p className='cursor-pointer hover:text-white'>Works</p>
         <p className='cursor-pointer hover:text-white'>Studio</p>
         <p className='cursor-pointer hover:text-white'>About Us</p>
       </div>
-      <div className='flex flex-col text-gray-500 font-medium space-y-2 text-sm'>
-        <p className='text-xl text-white font-bold pb-2'>Help</p>
+      <div className='flex flex-col text-gray-500 font-medium space-y-2 w-full'>
+        <p className='text-base md:text-xl text-white font-bold pb-2'>Help</p>
         <p className='cursor-pointer hover:text-white'>Privacy and Policy</p>
         <p className='cursor-pointer hover:text-white'>Terms of Use</p>
       </div>
-      <div className='flex flex-col text-gray-500 font-medium space-y-2 text-sm'>
-        <p className='text-xl text-white font-bold pb-2'>Social</p>
+      <div className='flex flex-col text-gray-500 font-medium space-y-2 w-full'>
+        <p className='text-base md:text-xl text-white font-bold pb-2'>Social</p>
         <p className='cursor-pointer hover:text-white'>Facebook</p>
         <p className='cursor-pointer hover:text-white'>Twitter</p>
         <p className='cursor-pointer hover:text-white'>Instagram</p>
